@@ -1,0 +1,106 @@
+body{
+ background: black;
+}
+header{
+ margin-top: 2%;
+ font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.dws-menu > ul li{
+ position: relative;
+ border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li a{
+ display: block;
+ background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+ padding: 15px 30px 15px 40px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+ background: linear-gradient(to bottom,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 ); /* IE6-9 */
+
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+					/*.dws-menu li > ul li{*/
+
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #e4e4e5;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+/*body*/
+#bg {
+ margin-top: 2%;
+ border-radius: 10px;
+ padding: 10px;
+ background: #b5b5b5;
+ text-align: center;
+}
+#bg h3{
+	 text-align: left;
+}
+#bg p{
+	 text-align: left;
+}
+a{
+	color: #454547;
+	text-decoration: none;
+}
+table.PnM{
+	text-decoration: none;
+	border-collapse:collapse;
+	width:100%;
+	text-align:center;
+}
+table.PnM th{
+	font-weight:normal;
+	font-size:14px; 
+	color:#ffffff;
+	background-color:#000000;
+}
+table.PnM td,table.PnM th{
+	white-space:pre-wrap;
+	padding:10px 5px;
+	line-height:13px;
+	vertical-align: middle;
+	border: 1px solid #000000;
+}
+table.PnM tr:hover{
+	background-color:#f9fafb
+}
+table.PnM tr:hover td{
+	color:#000000;
+	cursor:default;
+}
